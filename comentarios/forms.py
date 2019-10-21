@@ -9,7 +9,7 @@ class FormComentario(ModelForm):
         comentario = data.get('comentario')
 
         if len(nome) < 5:
-            self.add_erro(
+            self.add_error(
             'nome_comentario',
             'Nome precisa ter mais que 5 caracteres.'
             )
